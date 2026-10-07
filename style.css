@@ -1,0 +1,651 @@
+/* ================================
+CONFIGURAÇÕES GERAIS
+================================ */
+
+.body{
+margin: 50px;
+padding: 30px;
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-color: #3a2921;
+color: #8a6848;
+line-height: 1.6;
+}
+
+/* ================================
+CABEÇALHO
+================================ */
+
+#header {
+width: 90%;
+min-height: 80px;
+background-color: #4a3528;
+color: rgb(248, 244, 244);
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+padding: 2px 5%;
+
+position: sticky;
+top: 0;
+z-index: 1000;
+
+box-shadow: 0px 5px 15px #4a3528;
+
+}
+
+/* LOGO */
+
+#westWear {
+display: flex;
+align-items: center;
+gap: 50px;
+}
+
+#logoImg {
+width: 48px;
+height: 48px;
+object-fit: contain;
+}
+
+#westWear h1 {
+font-size: 28px;
+letter-spacing: 2px;
+font-weight: bold;
+}
+
+/* ================================
+MENU
+================================ */
+
+#menu .listaMenu {
+list-style: none;
+
+display: flex;
+align-items: center;
+
+gap: 30px;
+
+}
+
+#menu a {
+color: rgb(247, 8, 8);
+text-decoration: none;
+
+font-size: 16px;
+font-weight: bold;
+
+transition: 0.3s;
+
+}
+
+#menu a {
+color: #ffffff;
+}
+
+/* ================================
+BANNER PRINCIPAL
+================================ */
+
+#promotionBanner {
+min-height: 500px;
+
+background:
+    linear-gradient(
+        rgb(225, 225, 241),
+        rgb(221, 217, 211)
+    ),
+    url("banner.jpg");
+
+background-size: cover;
+background-position: center;
+
+display: flex;
+flex-direction: column;
+
+justify-content: center;
+align-items: center;
+
+text-align: center;
+
+padding: 40px 20px;
+
+color: rgb(68, 90, 122);
+
+}
+
+#promotionBanner h2 {
+font-size: 52px;
+text-transform: uppercase;
+letter-spacing: 3px;
+
+margin-bottom: 15px;
+
+}
+
+#promotionBanner p {
+max-width: 650px;
+
+font-size: 19px;
+
+margin-bottom: 30px;
+
+color: #f8f1f1;
+
+}
+
+/* BOTÃO */
+
+.botao {
+display: inline-block;
+
+background-color: rgb(230, 194, 153);
+color: #ce4040;
+
+text-decoration: none;
+
+padding: 13px 30px;
+
+border-radius: 5px;
+
+font-weight: bold;
+
+transition: 0.3s;
+
+}
+
+.botao {
+background-color: #c49f80;
+color: white;
+
+transform: translateY(-3px);
+
+}
+
+/* ================================
+PRODUTOS
+================================ */
+
+#produtos {
+padding: 80px 7%;
+
+text-align: center;
+
+background-color: #f4f4f4;
+
+}
+
+#tituloConteudo {
+font-size: 36px;
+
+text-transform: uppercase;
+
+margin-bottom: 10px;
+
+}
+
+#produtos > p {
+color: #85b8cc;
+
+margin-bottom: 40px;
+
+}
+
+/* ÁREA DOS PRODUTOS */
+
+#areaProdutos {
+max-width: 1200px;
+
+margin: auto;
+
+display: grid;
+
+grid-template-columns:
+    repeat(3, 1fr);
+
+gap: 30px;
+
+}
+
+/* CARD DO PRODUTO */
+
+.produto {
+background-color: #e2e8ee;
+
+border-radius: 100px;
+
+overflow: hidden;
+
+padding-bottom: 50px;
+
+box-shadow:
+    0 5px 20px rgba(241, 5, 25, 0.658);
+
+transition: 0.3s;
+
+}
+
+.produto {
+transform: translateY(-8px);
+
+box-shadow:
+    0 12px 30px rgba(250, 189, 189, 0.589);
+
+}
+
+/* IMAGEM */
+
+.produto img {
+width: 100%;
+height: 300px;
+
+object-fit: cover;
+
+display: block;
+
+transition: 0.4s;
+
+}
+
+.produto img {
+transform: scale(1.04);
+}
+
+/* TÍTULO */
+
+.tituloProduto {
+font-size: 22px;
+
+margin: 20px 15px 10px;
+
+color: #eec7a2;
+
+}
+
+/* DESCRIÇÃO */
+
+.produto  {
+color: #18467a;
+
+font-size: 15px;
+
+padding: 0 20px;
+
+min-height: 50px;
+
+}
+
+/* PREÇO */
+
+.precoProduto {
+font-size: 25px;
+
+font-weight: bold;
+
+color: #596052;
+
+margin: 18px 0;
+
+}
+
+/* BOTÃO COMPRAR */
+
+.produto > a {
+display: inline-block;
+
+background-color: #ffff07;
+
+color: rgb(243, 241, 241);
+
+text-decoration: none;
+
+padding: 11px 25px;
+
+border-radius: 5px;
+
+font-weight: bold;
+
+transition: 0.3s;
+
+}
+
+.produto > a {
+background-color: #3a2921;
+
+transform: scale(1.05);
+
+}
+
+/* ================================
+SOBRE A LOJA
+================================ */
+
+#sobre {
+padding: 80px 15%;
+
+background-color: #3a2921;
+
+color: white;
+
+text-align: center;
+
+}
+
+#sobre h2 {
+font-size: 36px;
+
+margin-bottom: 25px;
+
+text-transform: uppercase;
+
+}
+
+#sobre p {
+max-width: 850px;
+
+margin: 0 auto 15px;
+
+color: #eeeeee;
+
+font-size: 17px;
+
+}
+
+#sobre strong {
+color: rgb(236, 233, 233);
+
+font-size: 18px;
+
+}
+
+/* ================================
+CONTATO
+================================ */
+
+#contato {
+padding: 80px 20px;
+
+background-color: #dddbdb;
+
+text-align: center;
+
+}
+
+#contato h2 {
+font-size: 36px;
+
+margin-bottom: 10px;
+
+text-transform: uppercase;
+
+}
+
+#contato > p {
+color: #18467a;
+
+margin-bottom: 25px;
+
+}
+
+/* FORMULÁRIO */
+
+#contato form {
+max-width: 600px;
+
+margin: 30px auto;
+
+background-color: #f0efef;
+
+padding: 35px;
+
+border-radius: 10px;
+
+box-shadow:
+    0 5px 20px rgba(168, 168, 168, 0.08);
+
+display: flex;
+flex-direction: column;
+
+text-align: left;
+
+}
+
+/* LABEL */
+
+#contato label {
+font-weight: bold;
+
+margin-bottom: 7px;
+
+color: #3a2921;
+
+}
+
+/* INPUTS */
+
+#contato input,
+#contato textarea {
+width: 100%;
+
+padding: 13px;
+
+margin-bottom: 20px;
+
+border: 1px solid #ccc;
+
+border-radius: 5px;
+
+font-family: Arial, Helvetica, sans-serif;
+
+font-size: 15px;
+
+outline: none;
+
+transition: 0.3s;
+
+}
+
+#contato input,
+#contato textarea {
+border-color: #444444;
+
+box-shadow:
+    0 0 0 2px rgba(235, 232, 232, 0.08);
+
+}
+
+/* TEXTAREA */
+
+#contato textarea {
+resize: vertical;
+}
+
+/* BOTÃO ENVIAR */
+
+#contato button {
+border: none;
+
+background-color: #17243a;
+
+color: rgb(228, 228, 228);
+
+padding: 14px;
+
+border-radius: 5px;
+
+font-size: 16px;
+
+font-weight: bold;
+
+cursor: pointer;
+
+transition: 0.3s;
+
+}
+
+#contato button {
+background-color: #17243a;
+
+transform: translateY(-2px);
+
+}
+
+/* LINKS DE CONTATO */
+
+#contato a {
+color: #17243a;
+
+font-weight: bold;
+
+text-decoration: none;
+
+}
+
+#contato a {
+text-decoration: underline;
+}
+
+/* ================================
+RODAPÉ
+================================ */
+
+footer {
+background-color: #444444;
+
+color: #ebebeb;
+
+text-align: center;
+
+padding: 30px 20px;
+
+font-size: 14px;
+
+}
+
+footer p {
+margin: 5px 0;
+}
+
+/* ================================
+RESPONSIVIDADE
+================================ */
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+
+#header {
+    padding: 15px 4%;
+}
+
+#areaProdutos {
+    grid-template-columns:
+        repeat(2, 1fr);
+}
+
+#promotionBanner h2 {
+    font-size: 42px;
+}
+
+#sobre {
+    padding: 50px 8%;
+}
+
+}
+
+/* CELULARES */
+
+@media (max-width: 500px) {
+
+#header {
+    flex-direction: column;
+
+    gap: 15px;
+
+    padding: 18px;
+}
+
+
+#westWear h1 {
+    font-size: 24px;
+}
+
+
+#menu .listaMenu {
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+
+#menu a {
+    font-size: 14px;
+}
+
+
+#promotionBanner {
+    min-height: 450px;
+}
+
+
+#promotionBanner h2 {
+    font-size: 32px;
+
+    letter-spacing: 1px;
+}
+
+
+#promotionBanner p {
+    font-size: 16px;
+}
+
+
+#produtos {
+    padding: 60px 5%;
+}
+
+
+#tituloConteudo {
+    font-size: 28px;
+}
+
+
+#areaProdutos {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+}
+
+
+.produto img {
+    height: 200px;
+}
+
+
+#sobre {
+    padding: 60% 7%;
+}
+
+
+#sobre h2,
+#contato h2 {
+    font-size: 28px;
+}
+
+
+#contato form {
+    padding: 25px 20px;
+}
+
+}
